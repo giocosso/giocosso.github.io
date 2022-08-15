@@ -1,0 +1,86 @@
+/* font:
+font-style(normal|italic)
+font-variant(normal|small-caps)
+font-weight(normal|bold)
+font-size/line-height(xx-small,x-small,small,medium,large,x-large,xx-large,xxx-large,inherit,larger,smaller)
+font-family('Oswald',sans-serif|'Noto Sans', sans-serif)
+text-transform: none|capitalize|uppercase|lowercase|initial|inherit;
+*/
+body {font:normal normal normal medium 'Noto Sans', sans-serif; text-transform:none;}
+#menuMain a {font:normal normal normal xx-large 'Oswald',sans-serif; text-transform:uppercase;}
+.pageInfo {font:normal normal normal large 'Noto Sans', sans-serif; text-transform:none;}
+header {font:normal normal normal x-large 'Oswald',sans-serif; text-transform:uppercase; text-align:left}
+header .recipePage {font-size:smaller}
+.title {font:normal normal bold large 'Noto Sans', sans-serif; text-transform:uppercase;}
+.subtitle {font:normal normal bold medium 'Noto Sans', sans-serif; text-transform:uppercase;}
+.label {font:normal normal normal smaller 'Noto Sans', sans-serif; text-transform:none;}
+dt, dd {font:normal normal normal smaller 'Noto Sans', sans-serif; text-transform:uppercase;}
+/* display */
+#pageContainer {max-width:700px; margin-left:auto; margin-right:auto;}
+#menuMain {
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25'%3E%3Cdefs%3E%3Cpattern id='p' width='100' height='100' patternUnits='userSpaceOnUse' patternTransform='rotate(45) scale(0.5)'%3E%3Cpath id='a' data-color='fill' fill='%23222' stroke='%23222' stroke-width='49.86' d='M49-1h2v102h-2z'%3E%3C/path%3E%3C/pattern%3E%3C/defs%3E%3Crect fill='url(%23p)' width='100%25' height='100%25'%3E%3C/rect%3E%3C/svg%3E");
+background-size: 100% 100%; background-position: 0 0; background-repeat:no-repeat;}
+#menuMain {text-align:right;}
+.pageInfo {padding:16px;}
+.pageInfo span {padding-left:8px; padding-right:8px; text-align:center; border-radius:50%}
+.sticky {position:-webkit-sticky; position:sticky; top:0; z-index:1}
+body {line-height:1.5}
+p,dl,ul,ol,div.garnish,div.bartools,div.glassware {margin:9px 0px;}
+p.title {margin-top:12px;}
+ul {list-style-type:none; padding-left: 0px;}
+ol {list-style-type:decimal; padding-left:24px;}
+li {margin:4px 0px;}
+ol>li {margin:12px 0px;}
+div.garnish, div.bartools, div.glassware {margin-top:20px; font-size:smaller; padding-left:24px; background-size:18px 18px; background-position: 0 0; background-repeat: no-repeat; }
+dt.garnish, dt.optional, dt.noID {padding-left:22px; background-size:18px 18px; background-position: 2px center; background-repeat:no-repeat; }
+dl {padding-left:0px;}
+dt, dd {display:inline-block; padding:4px 6px; margin:0px 4px 4px 0px;}
+div.garnish, dt.garnish {background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cg fill='%23333'%3E%3Cpath d='M19 17C26.6 9.4 14 3 3 3c0 11 6.4 23.6 14 16 0 0-1-7-9-11 9 1 11 9 11 9z'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");}
+div.glassware {background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cg fill='%23333'%3E%3Cpath d='M18 20h-5v-8l9-9H2l9 9v8H6c-.6 0-1 .4-1 1s.4 1 1 1h12c.6 0 1-.4 1-1s-.4-1-1-1zM12 6C6 6 4 4 4 4h16s-2 2-8 2z'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");}
+div.bartools {background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cg fill='%23333'%3E%3Cpath d='M5 13c2.2 0 4-1.8 4-4L5 5 1 9c0 2.2 1.8 4 4 4zm3-4H2l3-3 3 3zM19 13c2.2 0 4-1.8 4-4l-4-4-4 4c0 2.2 1.8 4 4 4zm3-4h-6l3-3 3 3zM13 7c0-1.1.9-2 2-2h5c.6 0 1-.4 1-1s-.4-1-1-1h-6c-.6 0-1-.4-1-1s-.4-1-1-1-1 .4-1 1-.4 1-1 1H4c-.6 0-1 .4-1 1s.4 1 1 1h5c1.1 0 2 .9 2 2v11c0 1.1-.9 2-2 2H2c-.6 0-1 .4-1 1s.4 1 1 1h20c.6 0 1-.4 1-1s-.4-1-1-1h-7c-1.1 0-2-.9-2-2V7z'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");}
+dt.optional {background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cg fill='%23333'%3E%3Cpath d='M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm0 18c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm1.5-6.5c-.2.9-.5 1.5-1.5 1.5s-1.5-.5-1.5-1.5 1.1-2.1 1.5-2.5c1-1 2-.9 2-2s-.9-2-2-2-2 1-2 2-1.3 1-1.3 1c-1 0-1.7-.9-1.4-1.9C7.8 6.5 9.1 5 12 5c4 0 5 3 5 5 0 2.1-3.2 2.2-3.5 3.5z'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");}
+dt.noID {background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cg fill='red'%3E%3Cpath d='M12 0L0 23h24L12 0zm0 21c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm0-5c-1.1 0-2-.9-2-2V8c0-1.1.9-2 2-2s2 .9 2 2v6c0 1.1-.9 2-2 2z'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");}
+#findCForm dt {cursor:pointer;}
+#searchForm, #findCForm, #findIForm {padding: 4px 16px;}
+header .recipePage {margin-left:8px;}
+header .findICheckbox {width:20px; height:20px; position:absolute; top: 12px; right:16px; cursor:pointer;
+background-size: 20px 20px;
+background-position: center center;
+background-repeat: no-repeat;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M 21.333333 2.6666667 V 21.333333 H 2.6666667 V 2.6666667 H 21.333333 M 21.333333 0 H 2.6666667 C 1.2 0 0 1.2 0 2.6666667 V 21.333333 C 0 22.8 1.2 24 2.6666667 24 H 21.333333 C 22.8 24 24 22.8 24 21.333333 V 2.6666667 C 24 1.2 22.8 0 21.333333 0 Z' fill='%23999' /%3E%3C/svg%3E");
+}
+header:hover .findICheckbox {
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M 21.333333 2.6666667 V 21.333333 H 2.6666667 V 2.6666667 H 21.333333 M 21.333333 0 H 2.6666667 C 1.2 0 0 1.2 0 2.6666667 V 21.333333 C 0 22.8 1.2 24 2.6666667 24 H 21.333333 C 22.8 24 24 22.8 24 21.333333 V 2.6666667 C 24 1.2 22.8 0 21.333333 0 Z' fill='%23FFF' /%3E%3C/svg%3E");
+}
+header.open .findICheckbox {
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M 21.333333 2.6666667 V 21.333333 H 2.6666667 V 2.6666667 H 21.333333 M 21.333333 0 H 2.6666667 C 1.2 0 0 1.2 0 2.6666667 V 21.333333 C 0 22.8 1.2 24 2.6666667 24 H 21.333333 C 22.8 24 24 22.8 24 21.333333 V 2.6666667 C 24 1.2 22.8 0 21.333333 0 Z' fill='%23FFF' /%3E%3C/svg%3E");
+}
+header.selected .findICheckbox {
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M 2.6660156 0 C 1.1860171 0 0 1.1993501 0 2.6660156 V 21.333984 C 0 22.80065 1.1860171 24 2.6660156 24 H 21.333984 C 22.813983 24 24 22.80065 24 21.333984 V 2.6660156 C 24 1.1993501 22.813983 0 21.333984 0 Z M 19.632812 4.0039062 22.460938 6.8320312 21.046875 8.2460938 9.3046875 19.996094 2.953125 13.644531 1.5390625 12.230469 4.3671875 9.4003906 5.78125 10.816406 9.3046875 14.337891 18.21875 5.4179688 Z' fill='%23FFF' /%3E%3C/svg%3E");
+}
+header.selected.open .findICheckbox {
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M 2.6660156 0 C 1.1860171 0 0 1.1993501 0 2.6660156 V 21.333984 C 0 22.80065 1.1860171 24 2.6660156 24 H 21.333984 C 22.813983 24 24 22.80065 24 21.333984 V 2.6660156 C 24 1.1993501 22.813983 0 21.333984 0 Z M 19.632812 4.0039062 22.460938 6.8320312 21.046875 8.2460938 9.3046875 19.996094 2.953125 13.644531 1.5390625 12.230469 4.3671875 9.4003906 5.78125 10.816406 9.3046875 14.337891 18.21875 5.4179688 Z' fill='%23FFF' /%3E%3C/svg%3E");
+}
+/* colors */
+#menuMain a {color:#fff}
+#menuMain a.selected {color:#111}
+#menuMain #searchMenuItem.selected {background-color:#ff85b4;}
+#menuMain #findCMenuItem.selected {background-color:#ffde70;}
+#menuMain #findIMenuItem.selected {background-color:#5cd1ff;}
+#menuMain #infoMenuItem.selected {background-color:#5cd1ff;}
+.pageInfo {color:#111;}
+.pageInfo span {color:#fff; background-color:#111}
+#searchPageInfo {background-color:#ff85b4;}
+#findCPageInfo {background-color:#ffde70;}
+#findIPageInfo {background-color:#5cd1ff;}
+#infoPageInfo {background-color:#5cd1ff;}
+body {background-color:#000}
+.dark {background-color:#111; color:#fff}
+.light {background-color:#fff; color:#111}
+.shade {background-color:#ddd; color:#111}
+header {color:#ccc}
+header:hover, header.open, header.selected {color:#FFF}
+.light dt {border:1px solid #ccc}
+.light dt.selected {background-color:#333; color:#fff; border-color:#333}
+.light dt.garnish {background-color:#cddc39; border-color:#cddc39}
+.light dt.optional {background-color:#ccc;}

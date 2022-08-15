@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Cocktails</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald|Noto+Sans">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div id="pageContainer" class="w3-padding-top">
+
+<div id="menuMain">
+	<a id="searchMenuItem" class="w3-button" onclick="listMainTypeChange('search')"></a>
+	<br><a id="findCMenuItem" class="w3-button" onclick="listMainTypeChange('findC')"></a>
+	<br><a id="findIMenuItem" class="w3-button" onclick="listMainTypeChange('findI')"></a>
+	<!--<br><a id="infoMenuItem" class="w3-button" onclick="listMainTypeChange('info')"></a>-->
+</div>
+
+<div class="sticky">
+	<div id="searchPageInfo" class="pageInfo w3-hide"></div>
+	<div id="findIPageInfo" class="pageInfo w3-hide"></div>
+	<div id="findCPageInfo" class="pageInfo w3-hide"></div>
+	<div id="searchForm" class="light w3-hide"> 
+		<input id="searchFormInput" class="w3-input" type="search"/>
+	</div>
+</div>
+
+<div id="findCForm" class="light w3-hide"></div>
+
+<div id="listMain" class="dark">
+	<noscript>
+		<div class="light w3-container w3-center">
+			<p class="title w3-text-red">Whoops! Something went wrong</p>
+			<p class="w3-text-red">Is JavaScript enabled?</p>
+		</div>
+	</noscript>
+</div><!--List-->
+
+<div id="findIForm" class="light w3-hide"></div>
+
+</div>
+
+<script src="data.js"></script> 
+<script src="main.js"></script>
+</body>
+</html>
